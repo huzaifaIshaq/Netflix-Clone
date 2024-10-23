@@ -11,6 +11,8 @@ body {
   background-color: black;
 }
 
+/* Main Section*/
+
 .main {
   height: 70vh;
   background-image: url("resources/Images/bg.webp");
@@ -28,6 +30,8 @@ body {
   position: absolute;
   top: 0;
 }
+
+/* NavBar Section */
 
 nav {
   display: flex;
@@ -49,6 +53,8 @@ nav button {
   position: relative;
   z-index: 10;
 }
+
+/* Hero Section */
 
 .hero {
   color: white;
@@ -82,6 +88,8 @@ nav button {
   line-height: 24px;
   text-align: center;
 }
+
+/* Bottom Of Web */
 
 .lineSeperation {
   height: 7px;
@@ -117,6 +125,7 @@ nav button {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 9px;
 }
 
@@ -129,9 +138,14 @@ nav button {
   color: white;
   border-color: 1px solid rgba(255, 255, 255, 0.362);
 }
+
+/* Secton Universal Style */
 section{
   padding-top: 50px;
 }
+
+
+/* Section 1 (main CSS) */
 
 .sec1 {
   margin-top: -32px;
@@ -193,7 +207,7 @@ section{
 
 }
 .image-gallery {
-  padding-top: 1vw;
+  padding-top: 1.5vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -215,4 +229,60 @@ section{
   .image-gallery img {
     max-width: 100%;
   }
+}
+
+/* Section Two - Three - Four - Five */
+
+.first {
+  display: flex;
+  justify-content: center;
+  max-width: 70vw;
+  margin: auto;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.secImg {
+  position: relative;
+}
+
+.secImg img {
+  width: 555px;
+  position: relative;
+  z-index: 10;
+}
+
+.secImg video {
+  position: absolute;
+  top: 51px;
+  right: 0.5px;
+  width: 555px;
+}
+
+section.first>div {
+  display: flex;
+  flex-direction: column;
+  padding: 34px 0;
+}
+
+section.first>div :nth-child(1) {
+  font-size: 48px;
+  font-weight: bolder;
+}
+
+
+section.first>div :nth-child(2) {
+  font-size: 24px;
+
+}
+
+.faq{
+  color: white;
+  height: 80vh;
+}
+.faqBox{
+  color: white;
 }
