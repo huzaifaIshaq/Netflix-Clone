@@ -89,6 +89,7 @@ nav button {
   text-align: center;
 }
 
+
 /* Bottom Of Web */
 
 .lineSeperation {
@@ -140,7 +141,7 @@ nav button {
 }
 
 /* Secton Universal Style */
-section{
+section {
   padding-top: 50px;
 }
 
@@ -182,7 +183,7 @@ section{
 
 #btn1 {
   padding: 8px 36px 8px 12px;
-  color :  rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
   font-size: 18px;
   border-radius: 4px;
   font-weight: normal;
@@ -190,12 +191,13 @@ section{
   background-color: rgba(23, 23, 23, 0.7);
   border: 1px solid rgba(255, 255, 255, 0.362);
   cursor: pointer;
-  
+
 
 }
+
 #btn2 {
   padding: 8px 36px 8px 12px;
-  color :  rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
   font-size: 18px;
   border-radius: 4px;
   font-weight: normal;
@@ -206,6 +208,7 @@ section{
 
 
 }
+
 .image-gallery {
   padding-top: 1.5vw;
   display: flex;
@@ -243,6 +246,15 @@ section{
   align-items: center;
 }
 
+@media screen and (max-width :1300px) {
+  .first {
+    flex-wrap: wrap;
+  }
+
+  nav {
+    max-width: 90vw;
+  }
+}
 
 
 .secImg {
@@ -250,7 +262,7 @@ section{
 }
 
 .secImg img {
-  width: 555px;
+  width: 401px;
   position: relative;
   z-index: 10;
 }
@@ -259,7 +271,7 @@ section{
   position: absolute;
   top: 51px;
   right: 0.5px;
-  width: 555px;
+  width: 401px;
 }
 
 section.first>div {
@@ -281,10 +293,72 @@ section.first>div :nth-child(2) {
 
 /* FAQ Section / Section 6  */
 
-.faq{
+.faq {
   color: white;
-  height: 80vh;
+  height: 100%;
 }
-.faqBox{
+
+.faq h2 {
+  text-align: center;
+  font-size: 40px;
+}
+
+.faqBox {
+  font-size: 24px;
+  font-weight: 600;
   color: white;
+  background-color: #2d2d2d;
+  display: flex;
+  padding: 24px;
+  max-width: 60vw;
+  margin: 12px auto;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+/* Footer Section */
+
+footer {
+  padding: 15px;
+  color: white;
+  margin: auto;
+  max-width: 90vw;
+  height: 30vh;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 15px;
+
+}
+
+@media screen and (max-width :1300px) {
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 19px;
+    gap: 35px;
+
+  }
+
+  .faqBox {
+    font-size: 15px;
+
+  }
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+
+
 }
