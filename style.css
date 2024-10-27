@@ -150,7 +150,7 @@ section {
 
 .sec1 {
   margin-top: -32px;
-  padding: 80px;
+  padding: 32px;
 }
 
 .sec1 content {
@@ -210,13 +210,15 @@ section {
 }
 
 .image-gallery {
-  padding-top: 1.5vw;
+  padding-top: 1.9vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .image-gallery img {
+  padding-top: 1.9vw;
+  padding-left: 1.9vw;
   max-width: 100%;
   height: auto;
 }
@@ -230,7 +232,7 @@ section {
 
 @media (max-width: 480px) {
   .image-gallery img {
-    max-width: 100%;
+    max-width: 50%;
   }
 }
 
@@ -254,6 +256,32 @@ section {
   nav {
     max-width: 90vw;
   }
+
+  nav img {
+    width: 5.5625rem;
+    position: relative;
+    z-index: 10;
+  }
+
+  nav button {
+    width: 77px;
+    position: relative;
+    z-index: 10;
+  }
+}
+
+.hero> :nth-child(1) {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.hero> :nth-child(2) {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: normal;
+  text-align: center;
 }
 
 
@@ -296,6 +324,7 @@ section.first>div :nth-child(2) {
 .faq {
   color: white;
   height: 100%;
+  padding: 58px 32px;
 }
 
 .faq h2 {
@@ -310,7 +339,7 @@ section.first>div :nth-child(2) {
   background-color: #2d2d2d;
   display: flex;
   padding: 24px;
-  max-width: 60vw;
+  max-width: 90vw;
   margin: 12px auto;
   justify-content: space-between;
   cursor: pointer;
@@ -339,6 +368,13 @@ footer {
     grid-template-columns: 1fr 1fr;
     padding: 19px;
     gap: 35px;
+
+  }
+
+  .faq h2 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: normal;
 
   }
 
