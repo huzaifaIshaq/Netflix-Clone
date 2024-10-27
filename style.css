@@ -68,9 +68,9 @@ nav button {
   padding: 0 29px;
 }
 
-.hero> :nth-child(1) {
+.spn1 {
   font-weight: 900;
-  font-size: 48px;
+  font-size: 55px;
   line-height: 70px;
   text-align: center;
 }
@@ -87,6 +87,15 @@ nav button {
   font-size: 16px;
   line-height: 24px;
   text-align: center;
+}
+
+@media (max-width: 480px) {
+  .spn1 {
+    font-weight: 900;
+    font-size: 34px;
+    line-height: 40px;
+    text-align: center;
+  }
 }
 
 
@@ -270,12 +279,7 @@ section {
   }
 }
 
-.hero> :nth-child(1) {
-  font-weight: 900;
-  font-size: 32px;
-  line-height: 40px;
-  text-align: center;
-}
+
 
 .hero> :nth-child(2) {
   font-weight: 500;
